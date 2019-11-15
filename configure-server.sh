@@ -24,6 +24,6 @@ sleep 25
 # Setup RBAC user using CLI
 couchbase-cli user-manage -c 127.0.0.1:8091 --username $COUCHBASE_ADMINISTRATOR_USERNAME --password $COUCHBASE_ADMINISTRATOR_PASSWORD \
 --set --rbac-username $COUCHBASE_RBAC_USERNAME --rbac-password $COUCHBASE_RBAC_PASSWORD --rbac-name $COUCHBASE_RBAC_NAME \
-      --roles bucket_admin[*] --auth-domain local
+      --roles bucket_full_access[*] --auth-domain local
 
 fg 1
