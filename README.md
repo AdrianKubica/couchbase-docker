@@ -1,9 +1,9 @@
-Install appropriate plugin for spring:
+# Install appropriate plugin for spring:
 `plugins {
     id 'com.palantir.docker-run' version '0.22.1'
 }`
 
-Then put in gradle appropriate configuration:
+# Then put in gradle appropriate configuration:
 
 `dockerRun {
     name 'couchbase'
@@ -20,4 +20,4 @@ Then put in gradle appropriate configuration:
     clean true
 }`
 
-Run docker iamge from `gradlew` with command: `dockerRun` 
+# Run docker image from `gradlew` with command: `dockerRun` 
